@@ -16,5 +16,5 @@ export default function postData(joke,emailList) {
     
     .then(res => console.log(res))
 */
-    return
+    return;
 }

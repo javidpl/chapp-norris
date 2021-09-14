@@ -6,7 +6,7 @@ export default function getRandomJoke(){
   .then(response => response.json())
   .then(data => {
       console.log(data);
-      if(data.type !== 'success'){
+      if(data.type !== 'success' || !data.type){
         return {id: -1, joke: "Service not available (this is not a joke)"}
       }
       const { value } = data;

@@ -11,14 +11,15 @@ export default function Jokes() {
     function setJokeAndGif () {
         getRandomJoke().then(({id,joke})=>{
             setJoke(joke);
+            localStorage.setItem("joke",joke);
+
             const gifRandomIndex = Math.floor(Math.random()*gifs.length);
             setGIf(gifs[gifRandomIndex]);
-            localStorage.setItem("joke",joke);
         });
     }
     
     useEffect( ()=>{
-        setJokeAndGif()
+        setJokeAndGif();
     },[]);
     
 
