@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+:root{
+  --bg-color : #282c34;
+}
+.App {
+  background-color: var(--bg-color);
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+
+
+
+
+
+

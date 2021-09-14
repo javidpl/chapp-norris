@@ -1,0 +1,36 @@
+
+.message-container {
+    height: 100vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gif{
+    width: 50vmin;
+}
+.gif img {
+    width: 100%;
+}
+.message {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 25px;
+}
+.back-link {
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 25px;
+    color: var(--bg-color);
+    cursor: pointer;
+    font-family: 'Black Ops One', Helvetica, sans-serif;
+    background: gold;
+    border: none;
+    box-shadow: 
+        5px 5px var(--bg-color), 
+        7px 7px gold, 
+        3px 3px gold,
+        3px 7px gold,
+        7px 3px gold
+    ;
+}

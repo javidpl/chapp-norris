@@ -1,0 +1,69 @@
+
+
+.joke-container {
+    overflow: hidden;
+    position: relative;
+    padding: 10px 10px 50px 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.meme-bg {
+    opacity: 0.3;
+    position: absolute;
+    width: 100%;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+.joke-displayer {
+    position: relative;
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 27px;
+}
+.joke-displayer div {
+    display:table; /* for adapting text background-color to line length */
+}
+.joke-displayer span{
+    background-color: var(--bg-color);
+    white-space:pre-wrap;
+    padding: 1px;
+    padding-left:0px;
+    box-shadow: -10px 0 0 var(--bg-color), 10px 0 0 var(--bg-color);
+    border-bottom:  3px  solid deeppink;
+    line-height: 42px;
+}
+.generator-btn {
+    position: relative;
+    margin-top: 25px;
+    padding: 10px;
+    font-family: 'Black Ops One', Helvetica, sans-serif;
+    font-size: 25px;
+    color: var(--bg-color);
+    cursor: pointer;
+    background: deeppink;
+    border: none;
+    box-shadow: 
+        5px 5px var(--bg-color), 
+        7px 7px deeppink, 
+        3px 3px deeppink,
+        3px 7px deeppink,
+        7px 3px deeppink
+    ;
+}
+
+@media only screen and (max-width : 767px){
+
+    .joke-displayer span {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
